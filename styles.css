@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* - Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    font-size: 18px;
+    font-family: 'Outfit';
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+    display: grid;
+    gap: 1.5rem;
+    width: 21.875rem;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.equilibrium-img {
+    flex: 1;
+    width: 100%;  
+    border-radius: 0.5rem; 
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.description {
+    color: hsl(215, 51%, 70%);
+}
+
+.ethereum {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.ethereum > span {
+    color: hsl(215, 51%, 70%);
+    padding-left: 5rem;
+}
+
+.avitar {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    gap: 0.5rem;
+}
+
+.avitar > span {
+    color: white;
+    font-weight: 600;
+}
+
+.avitar > img {
+    width: 3rem;
+    border: 0.05rem solid white;
+    border-radius: 50%;
+}
+
+h1:hover, .avitar > span:hover {
+    color:hsl(178, 100%, 50%); 
+    cursor: pointer;
+}  
+
+.icon {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%);
+    width: 18.875rem;
+    height: 18.875rem;
+    border-radius: 0.5rem;
+}
+
+.icon:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+hr {
+    color: hsl(215, 51%, 70%);
+}
+
+
